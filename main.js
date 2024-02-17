@@ -1,5 +1,5 @@
 // Create a "close" button and append it to each list item
-var toDosLst = document.getElementsById("tasks");
+var toDosLst = document.getElementsByTagName("li");
 var i;
 for (i = 0; i < toDosLst.length; i++) {
   var span = document.createElement("SPAN");
@@ -7,10 +7,6 @@ for (i = 0; i < toDosLst.length; i++) {
   span.className = "close";
   span.appendChild(txt);
   toDosLst[i].appendChild(span);
-}
-
-function fun() {
-  console.log("Bad!");
 }
 
 // Click on a close button to hide the current list item
@@ -35,7 +31,7 @@ list.addEventListener('click', function(ev) {
 
 function addProgress() {
   var bar = getElementById("workProgress");
-  var total = document.getElementById("tasks").getElementsByTagName("li").length;
+  var total = document.getElementById("tasks").length;
   //bar.style.width += 1/total;
   bar.style.width = 50+'%';
 }

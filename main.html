@@ -3,32 +3,25 @@
 <head>
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-
-  <script src="main.js"></script>
 </head>
  
-
-
-<div style="width: 50%; height: 50%; background-color: whitesmoke; float:left;">
-  <h2>Profile Here</h2>
-</div>
-
-<div class="levelBar">
-  <div class="w3-border">
-    <div class="w3-blue" style="height:25px;width: 10px;" id="workProgress"></div>
+<body>
+  <div style="width: 50%; height: 50%; background-color: whitesmoke; float:left;">
+    <h2>Profile Here</h2>
   </div>
-  <div class="w3-border">
-    <div class="w3-blue" style="height:25px;width:30%"></div>
+  
+  <div class="levelBar">
+    <div class="w3-border">
+      <div class="w3-blue" style="height:25px;width: 10px;" id="workProgress"></div>
+    </div>
+    <div class="w3-border">
+      <div class="w3-blue" style="height:25px;width:30%"></div>
+    </div>
   </div>
-</div>
-
-
-
 
   <div id="topBar" class="header">
     <h2>Things Will Happen...</h2>
-    <input type="text" id="toDoInput" placeholder="Add Something Here..." 
+    <input type="text" id="toDoInput" placeholder="Add Something Here..."
             onkeydown="if (event.keyCode === 13) document.getElementById('addBtn').click();">
     <span onclick="newElement()" class="addBtn">Add</span>
   </div>
@@ -36,11 +29,13 @@
   <ul id="tasks">
     <li>Hit the gym</li>
     <li class="checked">Pay bills</li>
-    <li onclick="ev.target.classList.toggle('checked')">Meet George</li>
+    <li>Meet George</li>
     <li>Buy eggs</li>
     <li>Read a book</li>
     <li>Organize office</li>
   </ul>
 
-
+  
+  <script src="main.js"></script>
+</body>
 
