@@ -9,6 +9,10 @@ for (i = 0; i < toDosLst.length; i++) {
   toDosLst[i].appendChild(span);
 }
 
+function fun() {
+  console.log("Bad!");
+}
+
 // Click on a close button to hide the current list item
 var close = document.getElementsByClassName("close");
 var i;
