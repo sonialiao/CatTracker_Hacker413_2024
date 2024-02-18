@@ -12,30 +12,27 @@
   
   <div class="levelBar">
     <div class="w3-border">
-      <div class="w3-blue" style="height:25px;width: 10px;" id="workProgress"></div>
-    </div>
-    <div class="w3-border">
-      <div class="w3-blue" style="height:25px;width:30%"></div>
+      <div class="w3-blue" style="height:25px; width: 0%;" id="workProgress"></div>
     </div>
   </div>
 
   <div id="topBar" class="header">
     <h2>Things Will Happen...</h2>
-    <input type="text" id="toDoInput" placeholder="Add Something Here..."
-            onkeydown="if (event.keyCode === 13) document.getElementById('addBtn').click();">
+    <input type="text" id="toDoInput" placeholder="Add Something Here...">
+            <!-- onkeydown="if (event.keyCode === 13) document.getElementById('addBtn').click();"> -->
     <span onclick="newElement()" class="addBtn">Add</span>
   </div>
 
   <ul id="tasks">
     <li>Hit the gym</li>
-    <li class="checked">Pay bills</li>
+    <li>Pay bills</li>
     <li>Meet George</li>
     <li>Buy eggs</li>
     <li>Read a book</li>
     <li>Organize office</li>
   </ul>
 
-  
+
   <script src="main.js"></script>
 </body>
 
