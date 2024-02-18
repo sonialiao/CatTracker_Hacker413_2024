@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+  <link rel="stylesheet" href="leaderboard.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-    <div>
-        <h2>Leader Board Here?</h2>
+    <div id="title">
+        <h2>Leader Board Here</h2>
         <h3>Still Under Construction... The cats are working very hard to make this page work!</h3>
+    </div>
+    <div id="displaySelfProgress" class="selfBar">
+      <div class="w3-border w3-round-xlarge">
+        <h4> Your Progress: </h4>
+        <div class="w3-blue w3-round-xlarge" style="height:25px; width: 0%;" id="selfProgress"></div>
+        <script>
+          var width = localStorage.getItem("selfProgress");
+          var bar = document.getElementById("selfProgress");
+          bar.style.width = (width*100) + '%';
+          bar.innerHTML = Math.round(width*100) + '%';
+        </script>
+      </div>
+    </div>
+    <div id="displayOtherProgress">
+      <h4> Others: </h4>
     </div>
 </body>
