@@ -16,7 +16,6 @@ for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
     var div = this.parentElement;
     div.style.display = "none";
-    addProgress();
   }
 }
 
@@ -34,7 +33,12 @@ function updateProgress() {
   var completed = document.getElementsByClassName("checked").length;
   var bar = document.getElementById("workProgress");
   var total = document.getElementById("tasks").getElementsByTagName('li').length;
-  if (completed/total <= 1) bar.style.width = ((completed/total)*100) + '%';
+
+  var progress = completed/total;
+  if (progress <= 1) {
+    bar.style.width = (progress*100) + '%';
+    bar.innerHTML = Math.round(progress*100) + '%';
+  }
 }
 
 // Create a new list item when clicking on the "Add" button
@@ -70,3 +74,13 @@ function checkEnterKey(event){
     newElement();
   }
 }
+
+// Profile Generation
+profilePic =new Array();
+profilePic[0]='confusion.jpg';
+profilePic[1]='countMoney.jpg';
+profilePic[2]='GalaxyBrain.jpg';
+profilePic[3]='loading.jpg';
+profilePic[4]='noThoughts.jpg';
+profilePic[5]='watching.jpg';
+document.getElementById("profilePic").setAttribute("src", profilePic[Math.round(Math.random()*3)]);
