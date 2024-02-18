@@ -6,15 +6,13 @@
 </head>
  
 <body>
-  <div style="width: 50%; height: 50%; background-color: whitesmoke; float:left;">
-    <h2>Profile Here</h2>
-
-    <img class="img" id="profilePic" src="./profiles/confusion.jpg">
+  <div style="float:left;">
+    <img class="img" id="profilePic" src="profiles/confusion.jpg">
     <script>
       // Profile Generation
       profilePic =new Array();
       profilePic[0]='confusion.jpg';
-      profilePic[1]='countMoney.jpg';
+      profilePic[1]='CountMoney.jpg';
       profilePic[2]='GalaxyBrain.jpg';
       profilePic[3]='loading.jpg';
       profilePic[4]='noThoughts.jpg';
@@ -30,8 +28,11 @@
     </div>
   </div>
 
-  <div id="topBar" class="header">
-    <h2>Things Will Happen...</h2>
+  <div class="header">
+    <h2>Cat and Track</h2>
+  </div>
+
+  <div class="header">
     <input type="text" id="toDoInput" placeholder="Add Something Here..."
             onkeydown="checkEnterKey(event)">
     <span onclick="newElement()" class="addBtn">Add</span>
