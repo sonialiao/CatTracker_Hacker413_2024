@@ -39,6 +39,7 @@ function updateProgress() {
     bar.style.width = (progress*100) + '%';
     bar.innerHTML = Math.round(progress*100) + '%';
   }
+  localStorage.setItem("selfProgress", progress);
 }
 
 // Create a new list item when clicking on the "Add" button
