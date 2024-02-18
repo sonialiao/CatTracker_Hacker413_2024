@@ -22,18 +22,19 @@ for (i = 0; i < close.length; i++) {
 
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
+
 list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'li') {
+  if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
-    addProgress();
   }
 }, false);
 
-function addProgress() {
-  var bar = getElementById("workProgress");
-  var total = document.getElementById("tasks").length;
-  //bar.style.width += 1/total;
-  bar.style.width = 50+'%';
+setInterval(updateProgress, 500);
+function updateProgress() {
+  var completed = document.getElementsByClassName("checked").length;
+  var bar = document.getElementById("workProgress");
+  var total = document.getElementById("tasks").getElementsByTagName('li').length;
+  if (completed/total <= 1) bar.style.width = ((completed/total)*100) + '%';
 }
 
 // Create a new list item when clicking on the "Add" button
