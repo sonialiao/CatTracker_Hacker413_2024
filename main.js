@@ -63,3 +63,9 @@ function newElement() {
   }
   
 }
+
+function checkEnterKey(event){
+  if(event.keyCode === 13){
+    newElement();
+  }
+}

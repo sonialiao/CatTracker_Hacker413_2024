@@ -22,7 +22,7 @@
   <div id="topBar" class="header">
     <h2>Things Will Happen...</h2>
     <input type="text" id="toDoInput" placeholder="Add Something Here..."
-            onkeydown="if (event.keyCode === 13) document.getElementById('addBtn').click();">
+            onkeydown="checkEnterKey(event)">
     <span onclick="newElement()" class="addBtn">Add</span>
   </div>
 
