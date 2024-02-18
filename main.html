@@ -8,11 +8,25 @@
 <body>
   <div style="width: 50%; height: 50%; background-color: whitesmoke; float:left;">
     <h2>Profile Here</h2>
+
+    <img class="img" id="profilePic" src="./profiles/confusion.jpg">
+    <script>
+      // Profile Generation
+      profilePic =new Array();
+      profilePic[0]='confusion.jpg';
+      profilePic[1]='countMoney.jpg';
+      profilePic[2]='GalaxyBrain.jpg';
+      profilePic[3]='loading.jpg';
+      profilePic[4]='noThoughts.jpg';
+      profilePic[5]='watching.jpg';
+      document.getElementById("profilePic").setAttribute("src", "./profiles/" + profilePic[Math.round(Math.random()*3)]);
+    </script>
+    
   </div>
   
   <div class="levelBar">
-    <div class="w3-border">
-      <div class="w3-blue" style="height:25px; width: 0%;" id="workProgress"></div>
+    <div class="w3-border w3-round-xlarge">
+      <div class="w3-blue w3-round-xlarge" style="height:25px; width: 0%;" id="workProgress"></div>
     </div>
   </div>
 
@@ -24,12 +38,12 @@
   </div>
 
   <ul id="tasks">
-    <li>Hit the gym</li>
-    <li>Pay bills</li>
-    <li>Meet George</li>
-    <li>Buy eggs</li>
-    <li>Read a book</li>
-    <li>Organize office</li>
+    <li>Win HackHer413</li>
+    <li>Consume Cookies</li>
+    <li>Cut Fingernails</li>
+    <li>Speak with the ghost of the Queen</li>
+    <li>Exist</li>
+    <li>Fail to Exist</li>
   </ul>
 
 

@@ -121,3 +121,13 @@
     float:right;
     background: lightseagreen;
   }
+
+  .img {
+    height: 50%;
+    width: 200px;
+    border-radius: 5%;
+    object-fit: cover;
+    border-width: 10px;
+    border-color: antiquewhite;
+    border-style: solid;
+  }
