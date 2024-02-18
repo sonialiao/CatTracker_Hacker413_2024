@@ -70,3 +70,5 @@ function checkEnterKey(event){
     newElement();
   }
 }
+
+alert('hello from the front end');

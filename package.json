@@ -1,0 +1,21 @@
+{
+  "name": "hacker413_2024",
+  "version": "1.0.0",
+  "description": "Things that need fixing: - checking off to-dos - delete button doesn't show up for pre-existing entries - delete button doesn't work",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sonialiao/Hacker413_2024.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sonialiao/Hacker413_2024/issues"
+  },
+  "homepage": "https://github.com/sonialiao/Hacker413_2024#readme"
+}
