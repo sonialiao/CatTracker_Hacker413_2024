@@ -74,13 +74,3 @@ function checkEnterKey(event){
     newElement();
   }
 }
-
-// Profile Generation
-profilePic =new Array();
-profilePic[0]='confusion.jpg';
-profilePic[1]='countMoney.jpg';
-profilePic[2]='GalaxyBrain.jpg';
-profilePic[3]='loading.jpg';
-profilePic[4]='noThoughts.jpg';
-profilePic[5]='watching.jpg';
-document.getElementById("profilePic").setAttribute("src", profilePic[Math.round(Math.random()*3)]);
