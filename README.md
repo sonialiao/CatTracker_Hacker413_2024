@@ -1,4 +1,4 @@
-# Hacker413_2024
+# Cat and Track: A Project for Hacker413 of Spring 2024
 
 ## Inspiration
 Faced with the difficulties of college life, many students struggle to eat, sleep, and study properly. We wanted to create something that would incentivize people to actually improve their quality of life through the one thing that can push most of us to do something we don't want to: competition. We were inspired by existing apps like Habitica, but our goal was to make it simple to understand and use so that we get as many people to participate as possible. We also wanted to make it seamlessly integrate with many peoples' time tracker, Google Calendar. 
@@ -26,4 +26,8 @@ Implementing all of our ideas into it! We want to deploy it as a publicly availa
 - loading in entries from Google Calendar
 - leveling up once the progress bar hits 100?
 - categories for todo's
-- due dates
+  - a by-category view page
+- due dates / priorities
+- the Leader Board page needs actual leading
+- deployment! Cats must be shared
+
