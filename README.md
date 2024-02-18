@@ -13,12 +13,12 @@ Using HTML, CSS, JavaScript, we created a web application. We use a GitHub repo 
 Many of the small mistakes that were made were very unclear due to the nature of HTML and JS. We spent many hours debugging to find out that it was a simple mistake. Also, connecting APIs and creating servers is not a simple task .
 
 ## Accomplishments that we're proud of
-We definitely love the UI of CatTracker and the overall fact that it does function like a to-do list. 
+We definitely love the UI of Cat and Track and the overall fact that it does function like a to-do list. 
 
 ## What we learned
 Next time, we will budget our time to leave more time for the tasks at the end of the hackathon, because that always ends up being the most important yet complicated things that need to be done. 
 
-## What's next for CatTracker
+## What's next for Cat and Track
 Implementing all of our ideas into it! We want to deploy it as a publicly available website and fix the backend server so that we can have multiple users' progress displayed on a leaderboard. We were also planning on adding categories to the tasks and a "category view" page, along with due date options for each task. It would also be interesting to try to implement the tool onto more useful platforms like as an app or on Apple Watch. 
 
 ---
